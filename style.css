@@ -1,0 +1,158 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s;
+}
+
+.container {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  margin: 1rem 0;
+}
+
+#habit-input {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+}
+
+form button {
+  padding: 0.7rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+li {
+  background: #e0f7fa;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li.completed {
+  background-color: #c8e6c9;
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: crimson;
+  cursor: pointer;
+}
+
+.progress {
+  margin-top: 1rem;
+}
+
+.progress-circle {
+  width: 100px;
+  height: 100px;
+  border: 8px solid #4CAF50;
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.badge-section {
+  margin-top: 2rem;
+}
+
+#badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badge {
+  background: gold;
+  color: white;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #222;
+  color: #fff;
+}
+
+body.dark .container {
+  background: #333;
+}
+
+body.dark #habit-input {
+  background: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+body.dark li {
+  background: #555;
+}
+
+body.dark li.completed {
+  background: #666;
+}
+
+body.dark .progress-circle {
+  border-color: #90caf9;
+}
