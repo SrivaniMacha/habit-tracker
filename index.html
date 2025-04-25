@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professional Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>🌟 Habit Tracker</h1>
+    <button id="mode-toggle">🌙</button>
+  </header>
+
+  <form id="habit-form">
+    <input type="text" id="habit-input" placeholder="Add new habit..." required>
+    <button type="submit">➕</button>
+  </form>
+
+  <div class="progress">
+    <h2>Today's Progress</h2>
+    <div class="progress-circle" id="progress-circle">
+      <span id="progress-percentage">0%</span>
+    </div>
+  </div>
+
+  <ul id="habit-list"></ul>
+
+  <div class="badge-section">
+    <h2>🏅 Badges</h2>
+    <div id="badges">
+      <!-- Earned badges appear here -->
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
